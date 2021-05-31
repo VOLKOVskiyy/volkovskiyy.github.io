@@ -46,3 +46,16 @@ function tem() {
 		document.getElementById('fon').style.display = 'none'
 		}, 300);
 	}
+
+	window.onload = function() {
+		setTimeout(function() {
+			document.getElementById('text').style.display = 'block'
+			document.getElementById('logo').style.transform = 'translateY(0%)'
+		}, 500);
+		setTimeout(function() {
+			document.getElementById('bgd').style.opacity = '0'
+		}, 2000);
+		setTimeout(function() {
+			document.getElementById('bgd').style.display = 'none'
+		}, 2500);
+	}
