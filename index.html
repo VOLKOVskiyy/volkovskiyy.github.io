@@ -13,7 +13,31 @@
 
 	</head>
 <body style="background-repeat: no-repeat; transition: 0.5s ease; background-image: url(img/bg2.png); " id="bodyg">
+	<div class="bgd" style="width: 100%; background-color: #202020; height: 100vh; position: fixed; z-index: 99999; transition: 0.5s ease;" id="bgd">
+<div class="container inline" id="bgd" style="transition: 0.5s ease;">
+	<img id="logo" src="logo.png" style="width: 126px; display: block; margin: 0 auto; margin-bottom: 20px; transition: 0.5s ease; transform: translateY(5%);">
+	<h1 id="text" style="text-align: center; color: #fff; letter-spacing: 1px; font-size: 30px; margin: 0; transition: 0.5s ease; opacity: 1; transform: translateY(-20%); animation: onid 0.3s ease forwards; opacity: 0; display: none;">ВОЛКОВСКИЙ<br>СЕРВИС</h1>
+</div>
+	</div>
 
+<style type="text/css">
+	.inline {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	@keyframes onid {
+		100% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+		0% {
+			opacity: 0;
+			transform: translateY(-20%);
+		}
+	}
+</style>
 	<style type="text/css">
 		#bodyg {
 			background-position: 0px 50px;
