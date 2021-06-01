@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" href="#" type="image/png">
 
 	</head>
-<body style="background-repeat: no-repeat; transition: 0.5s ease; background-image: url(img/bg2.png); " id="bodyg">
+<body id="bodyg" style="background-image: none;">
 	<div class="bgd" style="width: 100%; background-color: #202020; height: 100vh; position: fixed; z-index: 99999; transition: 0.5s ease;" id="bgd">
 <div class="container inline" id="bgd" style="transition: 0.5s ease;">
 	<img id="logo" src="logo.png" style="width: 126px; display: block; margin: 0 auto; margin-bottom: 20px; transition: 0.5s ease; transform: translateY(5%);">
@@ -37,63 +37,109 @@
 			transform: translateY(-20%);
 		}
 	}
+	.mainblock {
+		background: linear-gradient(135deg,#505add 34.4%,#be40c0 66.11%,#fba82b 96.37%);
+		width: 100%;
+		height: 100vh;
+	}
+	.blockone {
+		padding: 20px;
+		font-size: 25px;
+		text-align: center;
+		font-weight: 400;
+		display: inline-block;
+		border: 1px solid #fff;
+		border-radius: 10px;
+		    background: linear-gradient(41deg,#333b9e14 34.4%,#cbc2cc00 66.11%,#d2cbc257 96.37%);
+		color: #fff;
+		margin-bottom: 7px;
+		cursor: pointer;
+		transition: 0.1s ease;
+	}
+	.flexd {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: none;
+		grid-gap: 7px;
+	}
+	.blockone:hover {
+		background: linear-gradient(41deg,#d2cbc257 34.4%,#333b9e14 66.11%,#cbc2cc00 96.37%);
+		transform: scale(0.95);
+	}
+	#emoji {
+		font-size: 35px; 
+		padding-left: 25px; 
+		padding-right: 25px;
+	}
+	#texts {
+		font-size: 38px; 
+		width: 100%; 
+		text-align: center; 
+		border-radius: 15px; 
+		font-weight: 500;
+	}
+	#maintext {
+		font-size: 38px; 
+		width: 100%; 
+		text-align: center; 
+		border-radius: 15px; 
+		font-weight: 600;
+	}
+	#maintext2 {
+		text-align: center;
+		width: 100%;
+	}
+	.ff {
+		font-size: 10px;
+		margin-top: 10px;
+		color: #fff;
+		opacity: .8;
+		text-align: center;
+		letter-spacing: 1px;
+		font-weight: 400;
+	}
+	@media (min-width: 400px) {
+		.container {
+			width: 400px;
+		}
+	}
+	@media (max-width: 400px) {
+		#maintext {
+			font-size: 30px;
+		}
+		#texts {
+			font-size: 25px;
+		}
+		#emoji {
+			font-size: 25px;
+		}
+		.blockone {
+			font-size: 25px;
+		}
+		.container {
+			width: 100%;
+		}
+	}
 </style>
-	<style type="text/css">
-		#bodyg {
-			background-position: 0px 50px;
-			background-image: url(img/bg2.png); 
-			background-size: cover;
-		}
-		@media (max-width: 1488px) {
-			#bodyg {
-				background-position: inherit;
-				background-image: inherit; 
-				background-size: inherit;
-			}
-			.mainbutton {
-				box-shadow: none;
-			}
-			.circle {
-				box-shadow: none;
-			}
-		}
 
-	</style>
-
-
-
-	<div class="uved" id="tema">
-		Тема Изменена
+<div class="mainblock">
+	<div class="container inline">
+		<div class="blockone" id="maintext2">Сервисный Центр<br><strong>Волковский</strong></div>
+	<div class="flexd">
+		<div class="blockone" id="emoji" onclick="location.href='https://vk.com/volkovskiyy'"><span id="anim">🔥</span></div>
+		<div class="blockone" id="texts" onclick="location.href='https://vk.com/volkovskiyy'">владелец</div>
 	</div>
-
-<div class="shap1" id="shap1"></div>
-<div class="shap2" id="shap2">Волковский Сервис</div>
-<div class="container">
-	<p class="textheader" style="color: #000;">Добро пожаловать.<br>Вы находите на главной странице не просто сервиса, а самого лучшего сервиса в России, по цене, качеству и времени.<br>Будьте как дома, простой дизайн поможет вам это сделать.<br>Выберите ниже нужную вам навигационную кнопку.</p>
-</div>
-<div class="container">
-	<div class="lined"></div>
-<div class="flex" style="display: none;">
-	<a onclick="mainP('about.html')" class="mainbutton" style="width: 100%; padding-left: 15px; padding-right: 15px;">О нас</a>
-	<a onclick="mainP('about.html')" class="circle">></a>
-</div>
-<div class="flex">
-	<a onclick="mainP('uslugi.html')" class="mainbutton" style="width: 100%; padding-left: 15px; padding-right: 15px;">Услуги и Цены</a>
-	<a onclick="mainP('uslugi.html')" class="circle">></a>
-</div>
-<div class="flex">
-	<a onclick="mainP('gallery.html')" class="mainbutton" style="width: 100%; padding-left: 15px; padding-right: 15px;">Галлерея</a>
-	<a onclick="mainP('gallery.html')" class="circle">></a>
-</div>
-<div class="flex">
-	<a onclick="mainP('pol.html')" class="mainbutton" style="width: 100%; padding-left: 15px; padding-right: 15px;">Соглашение</a>
-	<a onclick="mainP('pol.html')" class="circle">></a>
-</div>
-<div class="flex">
-	<a class="mainbutton" style="width: 100%; padding-left: 15px; padding-right: 15px;" onclick="tem(), uvedom('tema')">Сменить Тему</a>
-	<a class="circle" onclick="tem(), uvedom('tema')">></a>
-</div>
-
+	<div class="flexd">
+		<div class="blockone" id="texts" onclick="location.href='gallery.html'">галлерея</div>
+		<div class="blockone" id="emoji" onclick="location.href='gallery.html'"><span id="anim">🌉</span></div>
+	</div>
+	<div class="flexd">
+		<div class="blockone" id="emoji" onclick="location.href='pol.html'"><span id="anim">📄</span></div>
+		<div class="blockone" id="texts" onclick="location.href='pol.html'">политика</div>
+	</div>
+	<div class="blockone" id="maintext" onclick="location.href='uslugi.html'">услуги</div>
+	<p class="ff">© Волковский Сервис — 2019<br>Самый лучший сервисный центр по<br>цене, качеству и времени!</p>
+	</div>
 </div>
 
 <script src="main.js" type="text/javascript"></script>
