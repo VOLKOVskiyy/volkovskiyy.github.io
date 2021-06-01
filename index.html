@@ -49,6 +49,7 @@
 		text-align: center;
 		font-weight: 400;
 		display: inline-block;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		border: 1px solid #fff;
 		border-radius: 10px;
 		    background: linear-gradient(41deg,#333b9e14 34.4%,#cbc2cc00 66.11%,#d2cbc257 96.37%);
@@ -56,6 +57,23 @@
 		margin-bottom: 7px;
 		cursor: pointer;
 		transition: 0.1s ease;
+	}
+	#mb {
+		opacity: 0;
+		transform: translateY(-30%) translate(-50%,-50%);
+		animation: zag .7s ease forwards;
+		animation-delay: 2s;
+	}
+
+	@keyframes zag {
+		100% {
+			transform: translateY(0%) translate(-50%,-50%);
+			opacity: 1;
+		}
+		0% {
+			transform: translateY(-30%) translate(-50%,-50%);
+			opacity: 0;
+		}
 	}
 	.flexd {
 		display: flex;
@@ -124,7 +142,7 @@
 </style>
 
 <div class="mainblock">
-	<div class="container inline">
+	<div class="container inline" id="mb">
 		<div class="blockone" id="maintext2">Сервисный Центр<br><strong>Волковский</strong></div>
 	<div class="flexd">
 		<div class="blockone" id="emoji" onclick="location.href='https://vk.com/volkovskiyy'"><span id="anim">🔥</span></div>
