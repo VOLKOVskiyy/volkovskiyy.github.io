@@ -27,7 +27,7 @@ function tem() {
 		document.getElementById('strelka').style.left = '-50%'
 		setTimeout(function() {
 			location.href = 'index.html'
-		}, 1500);
+		}, 500);
 	}
 
 	function openM(id) {
